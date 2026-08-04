@@ -1,0 +1,32 @@
+{
+  "model": "LogisticRegression (class_weight=balanced), same feature set as w05_model.ipynb",
+  "expected_holdout_performance": {
+    "test_base_rate": 0.511,
+    "precision_at_20": 0.65,
+    "precision_at_50": 0.72,
+    "precision_at_100": 0.66,
+    "roc_auc": 0.583,
+    "avg_precision": 0.577
+  },
+  "archetype_counts": {
+    "Stable": 22500,
+    "Declining & Visible -- Click Laggard": 4045,
+    "Declining & Visible -- Needs Refresh": 2092,
+    "Declining but Quiet": 1363
+  },
+  "action_counts": {
+    "no_action": 22500,
+    "optimize_title_meta": 4045,
+    "refresh_content": 2092,
+    "monitor_only": 1363
+  },
+  "high_risk_threshold_p75": 0.65,
+  "reference_snapshot_for_drift_monitoring": {
+    "holdout_base_rate": 0.511,
+    "full_set_base_rate": 0.542,
+    "mean_decline_proba": 0.505,
+    "precision_at_50_holdout": 0.72,
+    "flagged_share": 0.25,
+    "max_single_client_share_of_top20": 8
+  }
+}

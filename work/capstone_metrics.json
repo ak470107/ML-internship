@@ -1,0 +1,55 @@
+{
+  "base_rate": 0.542,
+  "holdout_precision_at_k": {
+    "20": {
+      "baseline": 0.2,
+      "logreg": 0.65,
+      "random_forest": 0.6
+    },
+    "50": {
+      "baseline": 0.3,
+      "logreg": 0.72,
+      "random_forest": 0.56
+    },
+    "100": {
+      "baseline": 0.3,
+      "logreg": 0.66,
+      "random_forest": 0.53
+    },
+    "300": {
+      "baseline": 0.407,
+      "logreg": 0.607,
+      "random_forest": 0.55
+    },
+    "500": {
+      "baseline": 0.434,
+      "logreg": 0.62,
+      "random_forest": 0.578
+    }
+  },
+  "holdout_roc_auc": {
+    "baseline": 0.488,
+    "logreg": 0.583,
+    "random_forest": 0.608
+  },
+  "honest_split_gap": {
+    "random_split": {
+      "roc_auc": 0.703,
+      "precision_at_20": 1.0,
+      "clients_leaked": 31
+    },
+    "client_grouped_split": {
+      "roc_auc": 0.583,
+      "precision_at_20": 0.65,
+      "clients_leaked": 0
+    }
+  },
+  "action_counts": {
+    "no_action": 22500,
+    "optimize_title_meta": 4045,
+    "refresh_content": 2092,
+    "monitor_only": 1363
+  },
+  "flagged_share": 0.25,
+  "max_single_client_share_of_top20": 8
+}
